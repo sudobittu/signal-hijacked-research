@@ -1,3 +1,6 @@
+Date of original conception and first documentation: July 30, 2026
+
+
 # Signal Hijacked — Original Research
 ## Sindhura Kona — Independent Security Researcher — 2026
 
