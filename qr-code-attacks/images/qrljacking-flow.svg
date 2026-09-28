@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 300" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c1322"/><stop offset="1" stop-color="#070b14"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#37d0ff"/>
+    </marker>
+    <style>
+      .box{fill:rgba(255,255,255,0.04);stroke:#39ffb0;stroke-width:1.5;rx:12;}
+      .num{fill:#39ffb0;font-size:13px;font-weight:700;font-family:monospace;}
+      .t{fill:#e6edf7;font-size:13px;}
+      .role{fill:#8fa3bf;font-size:12px;font-style:italic;}
+      .flow{stroke:#37d0ff;stroke-width:2;fill:none;marker-end:url(#arrow);}
+      .title{fill:#ffffff;font-size:19px;font-weight:800;}
+      .sub{fill:#ff5c8a;font-size:12px;font-weight:600;}
+    </style>
+  </defs>
+  <rect width="940" height="300" fill="url(#bg)" rx="16"/>
+  <text x="30" y="40" class="title">QRLJacking — Session Hijack via QR Login</text>
+  <text x="30" y="60" class="sub">⚠ Attack awareness — for authorized research &amp; defense only</text>
+
+  <!-- step boxes -->
+  <g>
+    <rect x="30"  y="95" width="160" height="90" rx="12" class="box"/>
+    <text x="42" y="118" class="num">01</text>
+    <text x="42" y="140" class="t">Attacker grabs a</text>
+    <text x="42" y="157" class="t">real login QR from</text>
+    <text x="42" y="174" class="t">the service</text>
+
+    <rect x="220" y="95" width="160" height="90" rx="12" class="box"/>
+    <text x="232" y="118" class="num">02</text>
+    <text x="232" y="140" class="t">Embeds it on a</text>
+    <text x="232" y="157" class="t">fake site &amp; sends</text>
+    <text x="232" y="174" class="t">link to victim</text>
+
+    <rect x="410" y="95" width="160" height="90" rx="12" class="box"/>
+    <text x="422" y="118" class="num">03</text>
+    <text x="422" y="140" class="t">Victim scans the</text>
+    <text x="422" y="157" class="t">QR with the real</text>
+    <text x="422" y="174" class="t">mobile app</text>
+
+    <rect x="600" y="95" width="160" height="90" rx="12" class="box"/>
+    <text x="612" y="118" class="num">04</text>
+    <text x="612" y="140" class="t">App authorizes the</text>
+    <text x="612" y="157" class="t">attacker's session,</text>
+    <text x="612" y="174" class="t">not the victim's</text>
+
+    <rect x="790" y="95" width="120" height="90" rx="12" class="box" stroke="#ff5c8a"/>
+    <text x="802" y="118" class="num" fill="#ff5c8a">05</text>
+    <text x="802" y="140" class="t">Full account</text>
+    <text x="802" y="157" class="t">takeover</text>
+  </g>
+
+  <!-- arrows -->
+  <path class="flow" d="M190 140 L218 140"/>
+  <path class="flow" d="M380 140 L408 140"/>
+  <path class="flow" d="M570 140 L598 140"/>
+  <path class="flow" d="M760 140 L788 140"/>
+
+  <!-- roles -->
+  <text x="42"  y="210" class="role">actor: attacker</text>
+  <text x="232" y="210" class="role">actor: attacker</text>
+  <text x="422" y="210" class="role">actor: victim</text>
+  <text x="612" y="210" class="role">actor: service</text>
+  <text x="802" y="210" class="role">impact</text>
+
+  <text x="30" y="270" class="role">Countermeasures: session confirmation (IP/geo notify) · location-based checks · MFA / sound-based second factor · short-lived one-time QR</text>
+</svg>

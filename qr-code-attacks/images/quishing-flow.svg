@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 300" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c1322"/><stop offset="1" stop-color="#070b14"/>
+    </linearGradient>
+    <marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#9b6bff"/>
+    </marker>
+    <style>
+      .b2{fill:rgba(255,255,255,0.04);stroke:#9b6bff;stroke-width:1.5;}
+      .n2{fill:#9b6bff;font-size:13px;font-weight:700;font-family:monospace;}
+      .x2{fill:#e6edf7;font-size:13px;}
+      .f2{stroke:#9b6bff;stroke-width:2;fill:none;marker-end:url(#arr2);}
+      .ti2{fill:#ffffff;font-size:19px;font-weight:800;}
+      .sub2{fill:#ff5c8a;font-size:12px;font-weight:600;}
+      .why{fill:#39ffb0;font-size:12px;}
+    </style>
+  </defs>
+  <rect width="940" height="300" fill="url(#bg2)" rx="16"/>
+  <text x="30" y="40" class="ti2">Quishing — Phishing that Hides in a QR Image</text>
+  <text x="30" y="60" class="sub2">⚠ Attack awareness — for authorized research &amp; defense only</text>
+
+  <!-- QR glyph -->
+  <g transform="translate(40,95)">
+    <rect x="0" y="0" width="90" height="90" rx="10" fill="#070b14" stroke="#9b6bff"/>
+    <g fill="#e6edf7">
+      <rect x="12" y="12" width="22" height="22"/><rect x="56" y="12" width="22" height="22"/>
+      <rect x="12" y="56" width="22" height="22"/>
+      <rect x="42" y="42" width="8" height="8"/><rect x="56" y="56" width="8" height="8"/>
+      <rect x="68" y="68" width="8" height="8"/><rect x="42" y="68" width="8" height="8"/>
+    </g>
+  </g>
+
+  <g>
+    <rect x="170" y="95" width="160" height="90" rx="12" class="b2"/>
+    <text x="182" y="118" class="n2">01</text>
+    <text x="182" y="140" class="x2">Phishing email with</text>
+    <text x="182" y="157" class="x2">a QR image — no</text>
+    <text x="182" y="174" class="x2">clickable URL to flag</text>
+
+    <rect x="360" y="95" width="160" height="90" rx="12" class="b2"/>
+    <text x="372" y="118" class="n2">02</text>
+    <text x="372" y="140" class="x2">Bypasses URL/link</text>
+    <text x="372" y="157" class="x2">scanners (it's just</text>
+    <text x="372" y="174" class="x2">an image)</text>
+
+    <rect x="550" y="95" width="160" height="90" rx="12" class="b2"/>
+    <text x="562" y="118" class="n2">03</text>
+    <text x="562" y="140" class="x2">User scans with a</text>
+    <text x="562" y="157" class="x2">personal phone —</text>
+    <text x="562" y="174" class="x2">off the corp network</text>
+
+    <rect x="740" y="95" width="170" height="90" rx="12" class="b2" stroke="#ff5c8a"/>
+    <text x="752" y="118" class="n2" fill="#ff5c8a">04</text>
+    <text x="752" y="140" class="x2">Lands on phishing</text>
+    <text x="752" y="157" class="x2">site → credentials</text>
+    <text x="752" y="174" class="x2">harvested</text>
+  </g>
+
+  <path class="f2" d="M130 140 L168 140"/>
+  <path class="f2" d="M330 140 L358 140"/>
+  <path class="f2" d="M520 140 L548 140"/>
+  <path class="f2" d="M710 140 L738 140"/>
+
+  <text x="30" y="230" class="why">Why it works: the payload is a picture, so traditional email link-analysis has nothing to parse.</text>
+  <text x="30" y="270" class="why" fill="#8fa3bf">Countermeasures: image/QR-aware email filtering · decode &amp; reputation-check destinations · user awareness · verify sender out-of-band</text>
+</svg>

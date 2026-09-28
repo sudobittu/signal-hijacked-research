@@ -25,3 +25,13 @@ message delivery to end-user devices.
 
 ## First Public Disclosure
 DEF CON 34 — Telecom Village — August 8, 2026
+
+---
+
+## 📱 Background: QR Code Attacks & Countermeasures
+
+Supporting primer on how QR codes are abused (QRLJacking, Quishing, code
+misappropriation) and how to defend against them — with original attack-flow
+diagrams. Context for the QR-based phishing vectors this research addresses.
+
+➡️ **[Read: QR Code Attacks & Countermeasures](qr-code-attacks/README.md)**
