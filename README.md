@@ -3,7 +3,7 @@
 
 
 # Signal Hijacked — Original Research
-## Sindhura Kona — Independent Security Researcher — 2026
+## sudobittu — Independent Security Researcher — 2026
 
 ## THE SIGNAL SWITCH
 
@@ -13,7 +13,7 @@ skepticism to compliance when faced with a QR-based
 phishing attack delivered through a trusted mobile 
 messaging channel.
 
-Coined and developed by Sindhura Kona, 2026.
+Coined and developed by sudobittu, 2026.
 
 ## CORE RESEARCH AREA
 
