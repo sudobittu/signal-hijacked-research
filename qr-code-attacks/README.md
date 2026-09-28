@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./images/header.svg" width="100%" alt="QR Code Attacks & Countermeasures" />
+  <img src="./images/header.png" width="100%" alt="QR Code Attacks & Countermeasures" />
 </p>
 
 > A primer on how QR codes are abused in real-world attacks — and how to defend
