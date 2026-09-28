@@ -19,11 +19,6 @@ that sits outside corporate security controls. That combination (opaque payload 
 trusted reflex + unmanaged device) is exactly what the *Signal Switch* framework
 studies: the moment a user flips from skepticism to compliance.
 
-<p align="center">
-  <img src="./images/benign-sample-qr.png" width="180" alt="Benign sample QR code" /><br/>
-  <em>A benign sample QR (encodes this repo's URL). Visually, a malicious one is indistinguishable.</em>
-</p>
-
 ---
 
 ## 1. QRLJacking (QR Login Jacking)
